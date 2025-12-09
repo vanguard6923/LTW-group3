@@ -4,7 +4,7 @@
     color: #343a40; 
 }
 
-/* Phần Bản đồ & Tìm kiếm (Đã được thay bằng Banner) */
+/* Phần Bản đồ và Tìm kiếm */
 .map-card {
     border-radius: 12px;
 }
@@ -26,7 +26,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.4); /* Lớp phủ đen trong suốt */
+        background: rgba(0, 0, 0, 0.4); 
         z-index: 1;
     }
 }
@@ -43,11 +43,11 @@
 /* -------------------- KẾT THÚC PHẦN THAY THẾ -------------------- */
 
 
-/* -------------------- TAB NAVIGATION (Hệ thống Tab) -------------------- */
+/* -------------------- Hệ thống Tab -------------------- */
 .store-nav-tabs {
     border-bottom: 2px solid #e9ecef;
 }
-/* ... (Giữ nguyên các định dạng Tab và Card Cửa hàng bên dưới) ... */
+
 
 .store-nav-tabs .nav-link {
     color: #495057;

@@ -1,13 +1,12 @@
-/* --- CSS CHO TRANG SẢN PHẨM (SANPHAM.HTML) --- */
 
 /* Thanh Breadcrumb (Trang chủ | Sản phẩm) */
 .breadcrumb-bar {
-    background-color: #f5f5f5; /* Màu xám nhạt */
+    background-color: #f5f5f5; 
     border-bottom: 1px solid #eee;
     font-size: 0.9rem;
 }
 
-/* Custom Phân Trang (Pagination) */
+/*  Phân Trang  */
 .custom-pagination .page-item {
     margin: 0 5px;
 }
@@ -22,18 +21,17 @@
 
 /* Trạng thái Active (Đang chọn) */
 .custom-pagination .page-item.active .page-link {
-    background-color: var(--primary-color); /* Màu đen */
+    background-color: var(--primary-color); 
     border-color: var(--primary-color);
     color: #fff;
 }
 
-/* Hiệu ứng Hover */
 .custom-pagination .page-link:hover {
     background-color: var(--light-gray);
     color: var(--primary-color);
 }
 
-/* Chỉnh lại nút dropdown bộ lọc cho đẹp */
+
 .dropdown-menu {
     border-radius: 0;
     border: 1px solid #ddd;
