@@ -1,0 +1,140 @@
+
+.section-stores h1 {
+    font-size: 2.5rem;
+    color: #343a40; 
+}
+
+/* Phần Bản đồ & Tìm kiếm (Đã được thay bằng Banner) */
+.map-card {
+    border-radius: 12px;
+}
+
+/* -------------------- PHẦN THAY THẾ (PROMO BANNER) -------------------- */
+.promo-banner-store {
+    min-height: 250px; 
+    background-size: cover;
+    background-position: center;
+    background-color: #dc3545; /* Màu dự phòng nếu ảnh lỗi */
+    position: relative;
+    overflow: hidden;
+    
+    /* Overlay làm mờ ảnh để chữ nổi bật */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4); /* Lớp phủ đen trong suốt */
+        z-index: 1;
+    }
+}
+
+.promo-banner-store .text-center {
+    position: relative;
+    z-index: 2;
+}
+
+.text-shadow {
+    /* Tạo bóng cho chữ để nổi bật trên nền ảnh */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+/* -------------------- KẾT THÚC PHẦN THAY THẾ -------------------- */
+
+
+/* -------------------- TAB NAVIGATION (Hệ thống Tab) -------------------- */
+.store-nav-tabs {
+    border-bottom: 2px solid #e9ecef;
+}
+/* ... (Giữ nguyên các định dạng Tab và Card Cửa hàng bên dưới) ... */
+
+.store-nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 600;
+    border: none;
+    padding: 1rem 1rem;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s;
+}
+
+.store-nav-tabs .nav-link:hover {
+    color: #dc3545;
+}
+
+.store-nav-tabs .nav-link.active {
+    color: #dc3545;
+    background-color: transparent;
+    border-color: #dc3545; 
+    font-weight: 700;
+}
+
+.store-nav-tabs .nav-link.disabled {
+    color: #adb5bd;
+    cursor: not-allowed;
+}
+
+/* -------------------- CARD CỬA HÀNG -------------------- */
+
+.store-item .card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.store-card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.store-card-hover:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.store-image-container {
+    overflow: hidden;
+    height: 250px; 
+    border-radius: 12px 12px 0 0;
+}
+.store-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.store-card-hover:hover .store-img {
+    transform: scale(1.08);
+}
+
+.store-details li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.store-details .fa-solid {
+    color: #dc3545; 
+}
+
+.store-direction-btn {
+    border-radius: 50px; 
+    font-weight: 600;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 767.98px) {
+    .section-stores h1 {
+        font-size: 2rem;
+    }
+    .store-image-container {
+        height: 180px; 
+        border-radius: 12px 12px 0 0 !important; 
+    }
+    .store-item .card {
+        border-radius: 12px;
+    }
+    .store-nav-tabs .nav-link {
+        font-size: 0.85rem;
+        padding: 0.8rem 0.5rem;
+    }
+}

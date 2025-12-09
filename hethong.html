@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Cửa Hàng - 360 Boutique</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/hethong.css">
+ </head>
+<body>
+
+    <header class="header-top-bar d-none d-lg-block">
+        <div class="container">
+            <div class="row align-items-center py-2">
+                <div class="col-lg-5 text-start">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-envelope me-2"></i>
+                        <span class="text-uppercase me-3">Đăng Ký Nhận Tin</span>
+                        <input type="email" placeholder="Nhập email của bạn" class="form-control me-2 top-bar-input">
+                        <button class="btn btn-dark btn-sm top-bar-btn">Đăng Ký</button>
+                    </div>
+                </div>
+                <div class="col-lg-7 text-end">
+                    <div class="d-flex justify-content-end align-items-center">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <span class="me-3">Hotline Mua Hàng: <span class="hotline"> 285 886 </span>| Hotline CSKH: <span class="hotline">1900 888 803 </span>- Ext 1 | Email CSKH:
+                            <span class="hotline">360boutique.vn@gmail.com</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-white main-navbar sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="360 Boutique Logo" class="logo-img">
+            </a>
+            
+            <form class="d-flex mx-auto search-form-lg d-none d-lg-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-lg-none">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="chinhsach.html">Chính sách</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hethong.html">Hệ thống cửa hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="thanhtoan.html">Thanh toán</a></li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto icon-links">
+                    <li class="nav-item d-lg-none">
+                        <form class="d-flex my-2" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                        </form>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="nav-secondary d-none d-lg-block">
+        <div class="container-fluid">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sanpham.html">Sản phẩm</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="chinhsach.html">Chính sách</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hethong.html">Hệ thống cửa hàng</a></li>
+                    <li class="nav-item"><a class="nav-link" href="thanhtoan.html">Thanh toán</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <main>
+        <div class="breadcrumb-bar py-2 mb-4">
+            <div class="container">
+                <a href="index.html" class="fw-bold text-dark"><i class="fa-solid fa-house me-1"></i> Trang chủ</a> 
+                <span class="mx-2">|</span> 
+                <span>Hệ thống Cửa hàng</span>
+            </div>
+        </div>
+
+        <section class="section-stores container mb-5">
+            <h1 class="text-center mb-5 fw-bold text-uppercase text-danger"><i class="fa-solid fa-store"></i> HỆ THỐNG CỬA HÀNG 360 BOUTIQUE</h1>
+            
+           <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card p-4 shadow-sm map-card">
+                        <div class="row">
+                            
+                            <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                                <div class="promo-banner-store h-100 rounded-3 d-flex align-items-center justify-content-center" style="background-image: url('assets/images/store_promo.jpg');">
+                                    <div class="text-center p-3 text-white">
+                                        <h2 class="fw-bold mb-1 text-uppercase text-shadow">GIẢM 20%</h2>
+                                        <p class="mb-0 text-shadow">Khi mua hàng trực tiếp tại cửa hàng!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 order-md-1 mt-3 mt-md-0">
+                                <h4 class="fw-bold mb-3 text-dark-emphasis">Tìm cửa hàng gần bạn nhất</h4>
+                                <div class="input-group mb-3">
+                                    <select class="form-select form-select-lg" aria-label="Chọn Tỉnh/Thành phố">
+                                        <option selected>Chọn Tỉnh / Thành phố</option>
+                                        <option value="HN">Hà Nội</option>
+                                        <option value="HP">Hải Phòng</option>
+                                        <option value="HCM">TP. Hồ Chí Minh (Sắp ra mắt)</option>
+                                    </select>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-danger btn-lg" type="button"><i class="fa-solid fa-magnifying-glass me-2"></i> TÌM KIẾM</button>
+                                </div>
+                                <div class="mt-3 text-center">
+                                     <p class="small text-muted mb-0">Hoặc chọn từ danh sách bên dưới</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="store-list mt-5">
+                
+                <ul class="nav nav-tabs nav-justified store-nav-tabs" id="storeTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="hanoi-tab" data-bs-toggle="tab" data-bs-target="#hanoi-content" type="button" role="tab" aria-controls="hanoi-content" aria-selected="true"><i class="fa-solid fa-building me-1"></i> HÀ NỘI (2)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="haiphong-tab" data-bs-toggle="tab" data-bs-target="#haiphong-content" type="button" role="tab" aria-controls="haiphong-content" aria-selected="false"><i class="fa-solid fa-anchor me-1"></i> HẢI PHÒNG (1)</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link disabled" id="hcm-tab" type="button" role="tab" aria-selected="false"><i class="fa-solid fa-city me-1"></i> TP.HCM (Sắp ra mắt)</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content pt-4" id="storeTabsContent">
+                    
+                    <div class="tab-pane fade show active" id="hanoi-content" role="tabpanel" aria-labelledby="hanoi-tab">
+                        <h3 class="text-center text-secondary mb-4">Danh sách các cửa hàng tại Hà Nội</h3>
+                        <div class="row g-4">
+                            
+                            <div class="col-lg-6 store-item">   
+                                <div class="card h-100 store-card-hover border-0">
+                                    <div class="store-image-container">
+                                        <img src="assets/images/shop1.jpg" class="card-img-top store-img" alt="Cửa hàng 360 Boutique Chùa Bộc">
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title fw-bold text-danger mb-3">27 CHÙA BỘC</h4>
+                                        <ul class="list-unstyled store-details">
+                                            <li><i class="fa-solid fa-location-dot fa-fw me-2"></i> 27 Chùa Bộc, P. Quang Trung, Q. Đống Đa, Hà Nội</li>
+                                            <li><i class="fa-solid fa-clock fa-fw me-2"></i> Giờ mở cửa: **9:00 - 22:00** (Kể cả CN)</li>
+                                            <li><i class="fa-solid fa-phone-volume fa-fw me-2"></i> Hotline: **0973 285 886**</li>
+                                        </ul>
+                                        <div class="d-grid mt-3">
+                                            <a href="https://maps.app.goo.gl/link-to-map" target="_blank" class="btn btn-outline-danger btn-sm store-direction-btn"><i class="fa-solid fa-route me-1"></i> CHỈ ĐƯỜNG ĐẾN CỬA HÀNG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 store-item">
+                                <div class="card h-100 store-card-hover border-0">
+                                    <div class="store-image-container">
+                                        <img src="assets/images/shop2.jpg" class="card-img-top store-img" alt="Cửa hàng 360 Boutique Thái Hà">
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title fw-bold text-danger mb-3">242 THÁI HÀ</h4>
+                                        <ul class="list-unstyled store-details">
+                                            <li><i class="fa-solid fa-location-dot fa-fw me-2"></i> 242 Thái Hà, P. Láng Hạ, Q. Đống Đa, Hà Nội</li>
+                                            <li><i class="fa-solid fa-clock fa-fw me-2"></i> Giờ mở cửa: **9:00 - 22:00** (Kể cả CN)</li>
+                                            <li><i class="fa-solid fa-phone-volume fa-fw me-2"></i> Hotline: **0862 052 988**</li>
+                                        </ul>
+                                        <div class="d-grid mt-3">
+                                            <a href="https://maps.app.goo.gl/link-to-map" target="_blank" class="btn btn-outline-danger btn-sm store-direction-btn"><i class="fa-solid fa-route me-1"></i> CHỈ ĐƯỜNG ĐẾN CỬA HÀNG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="haiphong-content" role="tabpanel" aria-labelledby="haiphong-tab">
+                        <h3 class="text-center text-secondary mb-4">Danh sách các cửa hàng tại Hải Phòng</h3>
+                        <div class="row g-4 justify-content-center">
+                            
+                            <div class="col-lg-6 store-item">
+                                <div class="card h-100 store-card-hover border-0">
+                                    <div class="store-image-container">
+                                        <img src="assets/images/shop3.jpg" class="card-img-top store-img" alt="Cửa hàng 360 Boutique Tô Hiệu">
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <h4 class="card-title fw-bold text-danger mb-3">272 TÔ HIỆU</h4>
+                                        <ul class="list-unstyled store-details">
+                                            <li><i class="fa-solid fa-location-dot fa-fw me-2"></i> 272 Tô Hiệu, Q. Lê Chân, Hải Phòng</li>
+                                            <li><i class="fa-solid fa-clock fa-fw me-2"></i> Giờ mở cửa: **9:00 - 22:00** (Kể cả CN)</li>
+                                            <li><i class="fa-solid fa-phone-volume fa-fw me-2"></i> Hotline: **0389 576 022**</li>
+                                        </ul>
+                                        <div class="d-grid mt-3">
+                                            <a href="https://maps.app.goo.gl/link-to-map" target="_blank" class="btn btn-outline-danger btn-sm store-direction-btn"><i class="fa-solid fa-route me-1"></i> CHỈ ĐƯỜNG ĐẾN CỬA HÀNG</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-warning text-center mt-5 shadow-sm">
+                    <i class="fa-solid fa-bell me-2"></i> **TP. HỒ CHÍ MINH: Cửa hàng mới sắp khai trương!** Vui lòng theo dõi Fanpage để cập nhật địa chỉ.
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer mt-5 pt-5 pb-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center footer-subscribe-mobile d-lg-none mb-4">
+                        <div class="d-flex justify-content-center align-items-center mb-2">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            <span class="text-uppercase me-3">Đăng Ký Nhận Tin</span>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <input type="email" placeholder="Nhập email của bạn" class="form-control me-2 w-50">
+                            <button class="btn btn-dark">Đăng Ký</button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-lg-3 mb-4">
+                        <h5 class="footer-heading mb-3">HỆ THỐNG CỬA HÀNG</h5>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="hethongcuahang.html">27 Chùa Bộc, Đống Đa, HN</a></li>
+                            <li><a href="hethongcuahang.html">242 Thái Hà, Đống Đa, HN</a></li>
+                            <li><a href="hethongcuahang.html">272 Tô Hiệu, Lê Chân, HP</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-6 col-lg-3 mb-4">
+                        <h5 class="footer-heading mb-3">CHÍNH SÁCH VÀ QUY ĐỊNH CHUNG</h5>
+                        <ul class="list-unstyled footer-list">
+                            <li><a href="dichvu.html#muahang">Hướng Dẫn Mua Hàng</a> </li>
+                            <li><a href="dichvu.html#thanhtoan">Hình Thức Thanh Toán</a></li>
+                            <li><a href="dichvu.html#baomat">Quy Định và Bảo Mật Thông Tin</a></li>
+                            <li><a href="dichvu.html#baohanh">Chính Sách Bảo Hành</a></li>
+                            <li><a href="dichvu.html#doihang">Chính sách Đổi Hàng</a></li>
+                            <li><a href="dichvu.html#vanchuyen">Chính Sách Vận Chuyển</a></li>
+                            <li><a href="dichvu.html#dieukhoan">Điều Khoản Dịch Vụ</a></li>
+                            <li>Giới Thiệu</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-3 mb-4 d-none d-lg-block">
+                        <h5 class="footer-heading mb-3">ĐỊA CHỈ</h5>
+                        <p class="footer-text">
+                            <strong>CÔNG TY CỔ PHẦN THỜI TRANG 360</strong><br>
+                            VPGD: Đại 6, Xã Phương Đình, Huyện Đan Phượng, Thành phố Hà Nội, Việt Nam
+                        </p>
+                        <p class="footer-text">
+                            Facebook thời trang nam: <br>
+                            <strong>360Boutique</strong>
+                        </p>
+                        <p class="footer-text">
+                            Hotline: 0973285886 - 0862052988<br>
+                            Email: <strong>360boutique.vn@gmail.com</strong>
+                        </p>
+                        <p class="footer-text">
+                            Website: <strong>https://360boutique.vn/</strong><br>
+                            GPKD: 0107156588
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-lg-3 mb-4">
+                        <h5 class="footer-heading mb-3">Fanpage</h5>
+                        <div class="fanpage-widget">
+                             <img src="assets/images/fanpage-preview.png" alt="Ảnh Fanpage 360 Boutique" class="fanpage-img mb-2">
+                             <div class="d-flex align-items-center justify-content-start">
+                                 <img src="assets/images/fanpage-logo.png" alt="Logo 360 Be Yourself" class="fanpage-small-logo me-2">
+                                 <div>
+                                     <strong>360 Boutique</strong>
+                                     <p class="mb-0 text-muted small">540.341 lượt thích</p>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-12 text-center d-lg-none mt-2">
+                        <span class="text-danger fw-bold">097 328 58 86</span>
+                        <span class="ms-3"><i class="fa-solid fa-phone me-1"></i>Hỗ trợ / Mua hàng</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* ---  THANH ĐIỀU HƯỚNG --- */
+.breadcrumb-bar {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+/* ---  THÔNG TIN SẢN PHẨM CƠ BẢN --- */
+.product-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-display {
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+/* --- HÌNH ẢNH SẢN PHẨM --- */
+
+/* Bên trái */
+.product-thumb-img {
+    cursor: pointer;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-thumb-img img {
+    border: 1px solid #eee;
+    transition: border-color 0.3s ease;
+}
+
+.product-thumb-img.active img,
+.product-thumb-img:hover img {
+    border-color: var(--primary-color);
+}
+
+/* Ảnh Chính  */
+.product-main-img {
+    overflow: hidden;
+}
+
+.product-main-img img {
+    transition: transform 0.5s ease;
+}
+
+.product-main-img img:hover {
+    transform: scale(1.05);
+}
+
+/* --- MÀU SẮC và SIZE --- */
+.color-swatch,
+.size-swatch {
+    width: 35px;
+    height: 35px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    transition: all 0.3s ease;
+}
+
+/* Style riêng cho Màu sắc */
+.color-swatch {
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.color-swatch.active,
+.color-swatch:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+/* Style riêng cho Size */
+.size-swatch {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.size-swatch.active {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.size-swatch:not(.disabled):hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.size-swatch.disabled {
+    cursor: not-allowed;
+    color: #ccc;
+    background-color: #f5f5f5;
+    text-decoration: line-through;
+}
+
+/* ---  INPUT SỐ LƯỢNG & NÚT MUA --- */
+/* .quantity-input input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.quantity-input input::-webkit-outer-spin-button,
+.quantity-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} */
+
+.quantity-input .btn {
+    border: none !important;
+    background-color: #eee;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-input .btn:hover {
+    background-color: #ccc;
+}
+
+.btn-add-to-cart {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    opacity: 0.9;
+}
+
+/* --- SẢN PHẨM LIÊN QUAN --- */
+
+
+.section-products {
+    text-align: center;
+}
+
+.section-products h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    margin-bottom: 3rem !important;
+}
+
+.product-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card .price {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* --- RESPONSIVE (Dành riêng cho PDP) --- */
+@media (max-width: 991.98px) {
+    /* Điều chỉnh tiêu đề và giá trên mobile */
+    .product-title {
+        font-size: 1.5rem;
+    }
+    
+    .price-display {
+        font-size: 1.8rem !important;
+    }
+
+    /* Ẩn mấy cái thumbnail  bên trái */
+    .product-detail-section .col-2.d-none.d-lg-block {
+        display: none !important;
+    }
+
+    /* Mở rộng ảnh chính ra full chiều ngang */
+    .product-detail-section .col-10.col-lg-9.offset-lg-1 {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+}

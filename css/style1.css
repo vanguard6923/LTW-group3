@@ -1,0 +1,248 @@
+/* Màu sắc chung */
+:root {
+    --primary-color: #000;
+    --secondary-color: #dc3545; /* Màu đỏ cho giá/hotline */
+    --light-gray: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* --- 1. TOP BAR & MAIN NAVBAR --- */
+.header-top-bar {
+    font-size: 0.8rem;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+}
+
+.top-bar-input {
+    max-width: 250px;
+    height: 30px;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0;
+}
+
+.top-bar-btn {
+    font-size: 0.8rem;
+    height: 30px;
+    line-height: 1; /* Căn chỉnh text trong button */
+    padding: 0.2rem 0.75rem;
+    border-radius: 0;
+}
+
+.hotline {
+    color: var(--secondary-color);
+}
+
+/* Navbar Chính (Sticky Top) */
+.main-navbar {
+    border-bottom: 1px solid #eee;
+    padding: 0.5rem 0;
+}
+
+.logo-img {
+    height: 35px; /* Ước lượng kích thước logo */
+}
+
+/* Search bar trên Desktop */
+.search-form-lg {
+    max-width: 350px;
+}
+
+/* Menu phụ (Sub-Menu) */
+.nav-secondary {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-secondary .nav-link {
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav-secondary .nav-link:hover,
+.nav-secondary .nav-link.active {
+    color: var(--primary-color);
+    /* Có thể thêm border-bottom nếu muốn nhấn mạnh */
+}
+
+/* Icons */
+.icon-links .nav-link {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+/* ---  BANNER CHÍNH --- */
+.hero-banner {
+    background-size: cover;
+    background-position: center top; 
+    min-height: 500px;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    padding-left: 10%;
+    position: relative;
+}
+
+/* ---  BANNER KHÁC --- */
+.promo-banner {
+    background-size: cover;
+    background-position: center;
+    min-height: 350px; /* Chiều cao cố định cho Desktop */
+}
+
+/* ---  SẢN PHẨM & TIN TỨC --- */
+.section-products,
+.section-news {
+    text-align: center; /* QUANT TRỌNG: Căn giữa phần tử inline-block h2 */
+}
+
+.section-products h2,
+.section-news h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block; /* Giữ để border-bottom chỉ rộng bằng chữ */
+    margin-bottom: 3rem !important;
+}
+
+.product-card .price {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.news-title {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.news-excerpt {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* --- 5. FOOTER --- */
+.footer {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.footer-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.footer-list li {
+    line-height: 1.8;
+}
+
+.footer-text {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* FANPAGE WIDGET - Đã chỉnh sửa */
+.fanpage-widget {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px; 
+    height: auto; 
+    display: block; 
+    font-size: 0.9rem;
+}
+
+.fanpage-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fanpage-small-logo {
+    width: 30px; /* Kích thước logo nhỏ */
+    height: 30px;
+}
+
+.fanpage-widget strong {
+    font-size: 0.95rem;
+    display: block;
+}
+
+.fanpage-widget .small {
+    font-size: 0.8rem;
+}
+
+
+/* --- RESPONSIVE (CUSTOM) --- */
+
+/* Mobile (Màn hình < 991.98px) */
+@media (max-width: 991.98px) {
+    /* Ẩn thanh top bar */
+    .header-top-bar {
+        display: none !important;
+    }
+
+    /* Đảm bảo logo nhỏ hơn trên mobile */
+    .logo-img {
+        height: 30px;
+    }
+
+    /* Menu Chính */
+    .main-navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Banner chính */
+    .hero-banner {
+        min-height: 350px; /* Giảm chiều cao */
+        padding-left: 5%;
+        background-position: right center; /* Điều chỉnh vị trí ảnh để thấy mẫu */
+    }
+
+    /* Banner khuyến mãi */
+    .promo-banner {
+        min-height: 200px;
+    }
+
+    /* Sản phẩm (2 cột trên mobile) */
+    .section-products .row {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+
+    /* Tin tức (1 cột trên mobile) */
+    .section-news .row-cols-1 {
+        --bs-columns: 1;
+    }
+
+    .news-excerpt {
+        display: none !important; /* Ẩn đoạn trích trên mobile */
+    }
+
+    /* Footer */
+    .footer-heading {
+        font-size: 0.95rem;
+    }
+}
+
