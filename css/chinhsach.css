@@ -1,0 +1,103 @@
+/* ===============================
+   CHÍNH SÁCH – TỐI GIẢN BOUTIQUE
+   =============================== */
+
+.policy-page {
+    background-color: #faf9f7;
+}
+
+/* HERO */
+.policy-hero {
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.policy-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(28,28,28,0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.policy-hero h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.policy-hero p {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-top: 8px;
+}
+
+/* POLICY LIST */
+.policy-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 70px auto;
+}
+
+/* CARD */
+.policy-card {
+    background-color: #fff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.policy-card:hover {
+    transform: translateY(-6px);
+}
+
+.policy-card i {
+    font-size: 2.2rem;
+    color: #c59d5f;
+    margin-bottom: 15px;
+}
+
+.policy-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.policy-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* NOTE */
+.policy-note {
+    background-color: #1c1c1c;
+    padding: 35px 15px;
+    text-align: center;
+}
+
+.policy-note p {
+    color: #ddd;
+    font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .policy-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .policy-list {
+        grid-template-columns: 1fr;
+    }
+}

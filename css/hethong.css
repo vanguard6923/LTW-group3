@@ -4,21 +4,20 @@
     color: #343a40; 
 }
 
-/* Phần Bản đồ và Tìm kiếm */
+
 .map-card {
     border-radius: 12px;
 }
 
-/* -------------------- PHẦN THAY THẾ (PROMO BANNER) -------------------- */
+
 .promo-banner-store {
     min-height: 250px; 
     background-size: cover;
     background-position: center;
-    background-color: #dc3545; /* Màu dự phòng nếu ảnh lỗi */
+    background-color: #dc3545; 
     position: relative;
     overflow: hidden;
-    
-    /* Overlay làm mờ ảnh để chữ nổi bật */
+
     &::before {
         content: "";
         position: absolute;
@@ -37,17 +36,13 @@
 }
 
 .text-shadow {
-    /* Tạo bóng cho chữ để nổi bật trên nền ảnh */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
-/* -------------------- KẾT THÚC PHẦN THAY THẾ -------------------- */
 
 
-/* -------------------- Hệ thống Tab -------------------- */
 .store-nav-tabs {
     border-bottom: 2px solid #e9ecef;
 }
-
 
 .store-nav-tabs .nav-link {
     color: #495057;
@@ -72,6 +67,13 @@
 .store-nav-tabs .nav-link.disabled {
     color: #adb5bd;
     cursor: not-allowed;
+}
+
+
+.breadcrumb-bar {
+    background-color: #f5f5f5; 
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
 }
 
 /* -------------------- CARD CỬA HÀNG -------------------- */
