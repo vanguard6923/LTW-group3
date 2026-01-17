@@ -180,6 +180,14 @@
     font-size: 1.1rem;
     margin-top: 10px;
     background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.btn-place-order:hover {
+    opacity: 0.9;
 }
 
 .breadcrumb-bar {
