@@ -15,32 +15,7 @@ a{
     color: var(--primary-color);
 }
 
-/* --- 1. TOP BAR & MAIN NAVBAR --- */
-.header-top-bar {
-    font-size: 0.8rem;
-    background-color: var(--light-gray);
-    color: var(--text-color);
-}
 
-.top-bar-input {
-    max-width: 250px;
-    height: 30px;
-    font-size: 0.8rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0;
-}
-
-.top-bar-btn {
-    font-size: 0.8rem;
-    height: 30px;
-    line-height: 1; /* Căn chỉnh text trong button */
-    padding: 0.2rem 0.75rem;
-    border-radius: 0;
-}
-
-.hotline {
-    color: var(--secondary-color);
-}
 
 /* Navbar Chính (Sticky Top) */
 .main-navbar {
@@ -57,7 +32,7 @@ a{
     max-width: 350px;
 }
 
-/* Menu phụ (Sub-Menu) */
+/* Menu phụ  */
 .nav-secondary {
     border-bottom: 1px solid #eee;
 }
@@ -87,11 +62,11 @@ a{
     background-size: cover;
     background-position: center top; 
     min-height: 500px;
-    display: flex;
+    /* display: flex;
     align-items: center; 
     justify-content: flex-start;
     padding-left: 10%;
-    position: relative;
+    position: relative; */
 }
 
 /* ---  BANNER KHÁC --- */
@@ -101,10 +76,10 @@ a{
     min-height: 350px; /* Chiều cao cố định cho Desktop */
 }
 
-/* ---  SẢN PHẨM & TIN TỨC --- */
+/* ---  SẢN PHẨM và TIN TỨC --- */
 .section-products,
 .section-news {
-    text-align: center; /* QUANT TRỌNG: Căn giữa phần tử inline-block h2 */
+    text-align: center; /* QUAN TRỌNG: Căn giữa phần tử inline-block h2 */
 }
 
 .section-products h2,
@@ -113,7 +88,7 @@ a{
     font-weight: bold;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--primary-color);
-    display: inline-block; /* Giữ để border-bottom chỉ rộng bằng chữ */
+    display: inline-block; /* border-bottom chỉ rộng bằng chữ */
     margin-bottom: 3rem !important;
 }
 
@@ -123,9 +98,14 @@ a{
     font-size: 1.1rem;
 }
 
+.news-item, .news-item img {
+    border-radius: 13px;
+    overflow: hidden;
+}
 .news-item img {
     width: 100%;
     height: 200px;
+    transition: transform 0.5s ease;
 }
 
 .news-title {
@@ -137,6 +117,37 @@ a{
 .news-excerpt {
     font-size: 0.9rem;
     color: #6c757d;
+}
+
+.news-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ---  PHẦN ĐĂNG KÝ  --- */
+.header-top-bar {
+    font-size: 0.8rem;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+}
+
+.top-bar-input {
+    max-width: 250px;
+    height: 30px;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0;
+}
+
+.top-bar-btn {
+    font-size: 0.8rem;
+    height: 30px;
+    line-height: 1; /* Căn chỉnh text trong button */
+    padding: 0.2rem 0.75rem;
+    border-radius: 0;
+}
+
+.hotline {
+    color: var(--secondary-color);
 }
 
 /* --- 5. FOOTER --- */
@@ -162,7 +173,7 @@ a{
     line-height: 1.4;
 }
 
-/* FANPAGE WIDGET - Đã chỉnh sửa */
+/* FANPAGE  */
 .fanpage-widget {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -194,16 +205,16 @@ a{
 }
 
 
-/* --- RESPONSIVE (CUSTOM) --- */
+/* --- RESPONSIVE --- */
 
 /* Mobile (Màn hình < 991.98px) */
 @media (max-width: 991.98px) {
-    /* Ẩn thanh top bar */
+    
     .header-top-bar {
         display: none !important;
     }
 
-    /* Đảm bảo logo nhỏ hơn trên mobile */
+    /*  logo nhỏ hơn trên mobile */
     .logo-img {
         height: 30px;
     }
@@ -217,7 +228,7 @@ a{
     .hero-banner {
         min-height: 350px; /* Giảm chiều cao */
         padding-left: 5%;
-        background-position: right center; /* Điều chỉnh vị trí ảnh để thấy mẫu */
+        background-position: right center; 
     }
 
     /* Banner khuyến mãi */
@@ -232,9 +243,9 @@ a{
     }
 
     /* Tin tức (1 cột trên mobile) */
-    .section-news .row-cols-1 {
+    /* .section-news .row-cols-1 {
         --bs-columns: 1;
-    }
+    } */
 
     .news-excerpt {
         display: none !important; /* Ẩn đoạn trích trên mobile */
@@ -281,7 +292,7 @@ a{
     transition: opacity 0.4s ease;
 }
 
-/* Nút trong overlay */
+/* Nút trong Xem chi tiết */
 .product-overlay span {
     background: #fff;
     color: #000;
@@ -293,7 +304,6 @@ a{
     transition: all 0.4s ease;
 }
 
-/* Hover */
 .product-card:hover img {
     transform: scale(1.08);
 }
@@ -302,6 +312,6 @@ a{
     opacity: 1;
 }
 
-.product-card:hover .product-overlay span {
+/* .product-card:hover .product-overlay span {
     transform: translateY(0);
-}
+} */
